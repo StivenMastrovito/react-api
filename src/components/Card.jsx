@@ -1,6 +1,6 @@
 export default function Card({actor}) {
     return (
-        <div className="card">
+        <div className={`card ${actor.death_year !== undefined ? "death" : ""}`}>
             <div className="img_card"><img src={actor.image} alt={actor.name} /></div>
             <div className='body_card'>
                 <h3>Nome: {actor.name}</h3>

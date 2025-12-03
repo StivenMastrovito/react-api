@@ -1,17 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 
-img{
+img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 10px;
 }
 
-h1{
+body{
+  background-color: rgb(0, 81, 0);
+
+}
+
+h1 {
   height: 100px;
   color: red;
   background-color: rgb(198, 215, 0);
@@ -19,17 +24,16 @@ h1{
   line-height: 100px;
 }
 
-.grid{
+.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 10px;
   padding: 50px;
-  background-color: rgb(0, 81, 0);
   color: white;
 }
 
-.card{
+.card {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -40,13 +44,38 @@ h1{
   gap: 15px;
 }
 
-.img_card{
+.img_card {
   height: 30%;
   border-radius: 10px;
   text-align: center;
 }
 
-.body_card > *{
+.body_card>* {
   border-bottom: 1px solid rgb(234, 255, 0);
   margin-bottom: 5px;
+}
+
+.death {
+  border: 1px solid red;
+}
+
+.filter {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 80px;
+}
+
+label {
+  padding: 10px 15px;
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+input {
+  padding: 10px 15px;
+  border: 1px solid yellow;
+  border-radius: 10px;
 }
